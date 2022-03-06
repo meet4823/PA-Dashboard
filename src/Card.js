@@ -8,13 +8,17 @@ const Card = ({name}) => {   // meet 4
     <>
       <div className="card">
         <div className="container">
+
         <div id="value">{name.Value} </div>
+       
           <div id="name">{name.Name} </div>
-          <div ><img src={imgsrc[name.ImgName]} style={{height: '30px'}}/> </div>
+
+          <div id="image"><img src={imgsrc[name.ImgName]} style={{height: '80px'}}/> </div>
+        </div>
           
         </div>
     
-      </div>
+      
      
     </>
   );

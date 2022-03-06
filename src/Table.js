@@ -5,8 +5,11 @@ import Paper from "@material-ui/core/Paper";
 import TableCell from "@material-ui/core/TableCell";
 import Grid from "@mui/material/Grid";
 import Card from "./Card";
-import i1 from "./images/logo192.png";
-import i2 from "./images/process.png";
+
+import i1 from "./images/process.png";
+import i2 from "./images/approved.png";
+import i3 from "./images/draft.png";
+import i4 from "./images/rejected.png";
 let divs = [];
 function showNameCount(data) {
   divs = [];
@@ -28,14 +31,14 @@ function showNameCount(data) {
       imgName: "i2",
     },
     {
-      photo: { i1 },
+      photo: { i3 },
       text: "third project",
-      imgName: "i1",
+      imgName: "i3",
     },
     {
-      photo: { i1 },
+      photo: { i4 },
       text: "third project",
-      imgName: "i1",
+      imgName: "i4",
     },
   ];
 
@@ -94,7 +97,7 @@ function TablePage() {
   ];
   return (
     <>
-      <img src={i1} />
+      
       <TableCell>{showNameCount(data)}</TableCell>
       <Grid container spacing={2}>
         <Grid item xs={4}>
@@ -109,7 +112,7 @@ function TablePage() {
         </Grid>
 
         <Grid item xs={8}>
-          <div className="App">
+          <div >
             <MaterialTable
               title="Student Details"
               columns={columns}
