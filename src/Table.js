@@ -132,7 +132,7 @@ function TablePage() {
                 filtering: true,
                 paging: true,
                 pageSizeOptions: [2, 5, 9, 20, 25, 50, 100],
-                pageSize: 9,
+                pageSize: 6,
                 paginationType: "stepped",
                 showFirstLastPageButtons: false,
                 exportButton: true,

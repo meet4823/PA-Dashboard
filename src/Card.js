@@ -13,7 +13,7 @@ const Card = ({name}) => {   // meet 4
        
           <div id="name">{name.Name} </div>
 
-          <div id="image"><img src={imgsrc[name.ImgName]} style={{height: '80px'}}/> </div>
+          <div id="image"><img src={imgsrc[name.ImgName]} style={{height: '50px'}}/> </div>
         </div>
           
         </div>
