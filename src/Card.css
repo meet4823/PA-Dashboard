@@ -1,7 +1,7 @@
 .card {
     
     
-    height:16.5%;
+    height:18%;
     width: 80%;
     border:solid 3px rgb(235, 233, 233);
     border-radius: 10px;
@@ -26,13 +26,13 @@
   #name
   {
     color:black;
-    font-size:20px;
+    font-size:22px;
   }
   #image
 {
 	justify-items:centre;
   position:relative;
-  margin-left:370px;
+  margin-left:410px;
   top: -80px;
   
   
