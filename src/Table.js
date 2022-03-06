@@ -114,11 +114,49 @@ function TablePage() {
         <Grid item xs={8}>
           <div >
             <MaterialTable
-              title="Student Details"
+          
+              title={
+                <div style={{TextAlign:"center",fontSize:"30px",color:"rgb(60, 60, 212)"}}>
+                  My Personal Applications
+                </div>
+              }
               columns={columns}
               data={data}
               component={Paper}
-              options={{ actionsColumnIndex: -1, addRowPosition: "first" }}
+              options={{
+                sorting: true,
+                search: true,
+                searchFieldAlignment: "right",
+                searchAutoFocus: true,
+                searchFieldVariant: "standard",
+                filtering: true,
+                paging: true,
+                pageSizeOptions: [2, 5, 10, 20, 25, 50, 100],
+                pageSize: 10,
+                paginationType: "stepped",
+                showFirstLastPageButtons: false,
+                exportButton: true,
+                exportAllData: true,
+                exportFileName: "TableData",
+                addRowPosition: "first",
+                actionsColumnIndex: -1,
+                selection: true,
+                showSelectAllCheckbox: false,
+                showTextRowsSelected: true,
+                
+                grouping: false,
+                columnsButton: true,
+                rowStyle: (data, index) =>
+                index % 2 === 0 ? { background: "#f5f5f5" } : null,
+              headerStyle: {
+                background:
+                "#f5f5f5",
+               fontSize:"17px",
+                color: "black",
+              },
+              }}
+
+              style={{marginLeft:"60px",marginRight:"30px", border:"solid 3px rgb(235, 233, 233)"}}
             />
           </div>
         </Grid>
